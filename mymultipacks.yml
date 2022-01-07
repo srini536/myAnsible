@@ -3,6 +3,6 @@
   become: yes
   tasks: 
   - name: Install git
-  apt:
-    name: git
-    state: present
+    apt:
+       name: git
+       state: present
