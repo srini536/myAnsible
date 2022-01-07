@@ -10,4 +10,10 @@
   - name: Install tree
     apt:
         name: tree
-        state: present   
+        state: present
+
+
+  - name: Install wget
+    apt:
+        name: wget
+        state: present  
