@@ -1,0 +1,10 @@
+---
+- hosts: all
+  become: yes
+  tasks: 
+  - name: I want to install git,tree and wget
+    apt:
+      name:
+      - git
+      - tree
+      - wget
