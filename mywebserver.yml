@@ -16,7 +16,7 @@
 
    - name: Install web server only on RedHat nodes 
      yum:
-          name: apache2
+          name: httpd
           state: present
      when: ansible_os_family == "RedHat"
    - name: I want to start web server only on RedHat nodes 
