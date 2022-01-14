@@ -6,14 +6,16 @@
     command: hostname -f
     register: myfirsttaskresult
 
+ 
+
   - name: 
     apt:
          name: git
          state: present
-         when: myfirsttaskresult.stderr == ""
+    when: myfirsttaskresult.stderr == ""
 
   - name: 
     apt:
          name: tree
          state: present
-         when: myfirsttaskresult.stderr != ""
+    when: myfirsttaskresult.stderr != ""
