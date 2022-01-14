@@ -12,7 +12,7 @@
   - name: Install tree
     apt:
          name: tree
-         stateee: present
+         state: present
     ignore_errors: yes
     
   - name: Install wget
