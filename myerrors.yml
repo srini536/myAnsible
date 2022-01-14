@@ -7,15 +7,15 @@
     apt:
          name: git
          state: present
-    tags: mygit
+    
 
   - name: Install tree
     apt:
          name: tree
-         state: present
-    tags: mytree
+         stateee: present
+    
   - name: Install wget
     apt:
          name: wget
          state: present
-    tags: mywget
+    
