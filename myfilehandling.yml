@@ -20,6 +20,6 @@
 
   - name: create directory
     file:
-       src: /home/ubuntu/mytest
+       path: /home/ubuntu/mytest
        state: directory     
       
