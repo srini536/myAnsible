@@ -22,9 +22,11 @@
     file:
        path: /home/ubuntu/mytest
        state: directory   
+    notify:
+    - repeatedtasks  
 
   handlers:
-  - name: restart webserver
+  - name: repeatedtasks
     service:
         name: apache2
         state: restart       
