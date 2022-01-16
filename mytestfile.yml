@@ -13,6 +13,8 @@
     file:
        path: /home/ubuntu/file2
        state: touch
+    notify:
+    - repeatedtasks
 
   handlers:
   - name: repeatedtasks
