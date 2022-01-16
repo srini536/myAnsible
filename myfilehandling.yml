@@ -23,9 +23,9 @@
        path: /home/ubuntu/mytest
        state: directory   
 
-  handler:
+  handlers:
   - name: restart webserver
     service:
-       name: apache2
-       state: restart       
+        name: apache2
+        state: restart       
       
