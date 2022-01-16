@@ -21,5 +21,11 @@
   - name: create directory
     file:
        path: /home/ubuntu/mytest
-       state: directory     
+       state: directory   
+
+  handler:
+  - name: restart webserver
+    service:
+       name: apache2
+       state: restart       
       
